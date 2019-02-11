@@ -1,0 +1,103 @@
+---
+---
+
+$border-width: 2px;
+$footer-height: 2em;
+$large-spacing: 50px;
+$sidebar-width: 300px;
+$standard-spacing: 20px;
+
+@import "{{ site.theme }}";
+
+// Layout
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+header {
+  // TODO: background image per category
+  box-sizing: border-box;
+  padding: $standard-spacing;
+}
+
+header strong {
+  font: 2em "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 0 $standard-spacing;
+  width: 100%;
+}
+
+section {
+  border: 0;
+  float: none;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+footer {
+  border-style: dotted;
+  border-width: $border-width 0 0;
+  float: none;
+  position: static;
+}
+
+footer > p {
+  margin-top: 10px;
+}
+
+// Features
+
+.social-links {
+  font-size: 2em;
+}
+
+// Tablet (landscape) & desktop
+@media screen and (min-width: 721px) {
+
+  header {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: $sidebar-width;
+  }
+
+  .content {
+    padding: 0 $large-spacing 0 $sidebar-width;
+  }
+
+  section {
+    padding: $standard-spacing 0;
+  }
+
+  footer {
+    height: $footer-height;
+    width: 100%;
+  }
+}
+
+// Tablet (portrait)
+@media screen and (max-width: 720px) {
+
+  header {
+    border-style: dotted;
+    border-width: 0 0 $border-width;
+  }
+
+}
+
+// Mobile phones
+@media screen and (max-width: 480px) {
+
+
+}
