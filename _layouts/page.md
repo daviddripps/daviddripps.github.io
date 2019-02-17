@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{ "/assets/img/d.png" | relative_url }}"/>
-{% seo %}
+
+    {% comment %}Favicons{% endcomment %}
+    <link
+      href="{{ "/assets/img/favicon-apple-touch-114.png" | relative_url }}"
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114" href="favicon-apple-touch-114.png">
+    <link
+      href="{{ "/assets/img/favicon-apple-touch-144.png" | relative_url }}"
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144" href="favicon-apple-touch-144.png">
+    <link
+      href="favicon.ico"
+      rel="icon"
+      sizes="32x32 48x48"
+      type="image/vnd.microsoft.icon">
+    <link href="favicon.icns" rel="icon" sizes="128x128">
+    <link href="favicon.png" rel="icon" type="image/x-icon">
+
+    {% seo %}
+
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
     {% comment %} Font Awesome for Social Media Icons {% endcomment %}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
