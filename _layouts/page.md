@@ -15,12 +15,12 @@
       rel="apple-touch-icon-precomposed"
       sizes="144x144" href="favicon-apple-touch-144.png">
     <link
-      href="favicon.ico"
+      href="/favicon.ico"
       rel="icon"
       sizes="32x32 48x48"
       type="image/vnd.microsoft.icon">
-    <link href="favicon.icns" rel="icon" sizes="128x128">
-    <link href="favicon.png" rel="icon" type="image/x-icon">
+    <link href="/favicon.icns" rel="icon" sizes="128x128">
+    <link href="/favicon.png" rel="icon" type="image/x-icon">
 
     {% seo %}
 
